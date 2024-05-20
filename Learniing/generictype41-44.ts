@@ -1,4 +1,4 @@
-import { log } from "console"
+
 
 const func1 = <z>(foo:z):z=>{
     return foo
@@ -21,18 +21,18 @@ else{
 console.log(Addition("zara","st"));
 console.log(Addition(2,7));
 ////////////////////////////////////////////////////////////////
-//42
-// type User={}
-// type Blog ={}
-// type Comments = {}
-//  async function fechapi<Resulttype>(path:string):Promise<Resulttype>{
-// const response = await fetch(`https://google.com${path}`)
-// return response.json()
+42
+type User={}
+type Blog ={}
+type Comments = {}
+ async function fechapi<Resulttype>(path:string):Promise<Resulttype>{
+const response = await fetch(`https://google.com${path}`)
+return response.json()
 
-//}
-// const blog :Promise<Blog[]>=fechapi<Blog[]>("/blogs")
-// const user:Promise<User[]> = fechapi<User[]>("/user")
-// const coment:Promise<Comments[]> = fechapi<Comments[]>("/comemnt")
+}
+const blog :Promise<Blog[]>=fechapi<Blog[]>("/blogs")
+const user:Promise<User[]> = fechapi<User[]>("/user")
+const coment:Promise<Comments[]> = fechapi<Comments[]>("/comemnt")
 ///////////////////////////////////////////////////////////////////////
 //43
  function Mergy<T1 extends object  , T2 extends object>(arg1:T1,arg2:T2){
